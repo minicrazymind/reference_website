@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box; /*Keeping everything nice and organized*/
+  margin: 0px; /*Classic formatting maneuver to keep things in place*/
+  padding: 0px;
+}
+
+body {
+  background-color: RebeccaPurple; /*Feeling purple today*/
+}
+
+/*One container to rule them all*/
+.mainContainer {
+  display: flex;  /*setting up display to flex */
+  flex-flow: column; /*column because that's how I want to organize content in here*/
+}
+
+.blockHolder {
+  display: flex; /*setting up display to flex */
+  width: 100vw; /*Making sure the block holder stays max width */
+}
+
+.block{
+  height: 100vh; /*100vh means 100% of the viewing height of the browser*/
+
+}
+
+.block.side {
+  background-color: black; /*Black bars to shape my site*/
+  width: 25%; /*25% looked about right to make main area a square*/
+}
+
+/*Where I'll be doing most of my work*/
+.block.middle{
+  background-color: RebeccaPurple; /*BG color to see if anything is wrong*/
+  background-image:url('data/khazix.jpg'); /*Image*/
+  background-position:center center; /*Repositioning of bg images*/
+  background-size:100vmax; /*Big background size*/
+  background-repeat:repeat; /*turning on repetition of background image so it doesn't get too gnarly with the bg color when we resize the screen*/
+  width: 50%; /*Formatting to make main content be in a more square area */
+  font-family: 'Anton'; /* adding in font */
+}
+
+
+/*The div for storing rating image*/
+.rating{
+  display: flex; /*setting up display to flex */
+  flex-direction: column;  /*column because I want the text items to go top down in list order */
+  justify-content: flex-start;  /*make sure this element stays on the left */
+  width: 20vmin; /*sizing to fit screen*/
+  position: relative; /*To allow other elements to be placed on top of this image*/
+}
+
+.rating > img {
+  width: 100%; /*Sizing image inside rating div*/
+}
+
+
+.ratingReasons {
+  font-size:1.4vmin; /*Changing font size to fit pic*/
+  position: absolute; /*Allows placing text on top of the image*/
+  padding-left: 8vmin; /*These two padding elements move text to desired location on top of image*/
+  padding-top: 2vmin;
+}
+
+.ratingReasons p { /*Font size and bolding*/
+  font-family: 'Dosis';
+  font-weight: bold;
+}
+
+
+
+.logo {
+  padding: 5vmin; /*Moving image to where it is on reference*/
+  display: flex;  /*setting up display to flex */
+}
+
+.logo > img {
+  width: 30vmin; /*resizing logo image*/
+}
+
+.bigText{
+  color: white; /*We like a nice light color text on dark background*/
+  font-style: italic; /*Italicize to give the effect the reference has*/
+  display: flex;  /*setting up display to flex */
+  flex-flow: column; /*Column is how i'll be organizing the text*/
+}
+
+.bigText > h1 {
+  font-size: 25vmin; /*Font-sizing*/
+  letter-spacing: 0.06em; /*Tweaks to letter spacing to look better*/
+  display: flex;  /*setting up display to flex */
+  flex-flow: column; /*Columns are cool, for centering in middle*/
+  align-items: center; /*centering our "IT'S ON." text*/
+  line-height: 1em; /*Adjusting line height to compact the text a little more*/
+}
+
+h2:first-child{
+  padding-top: 21vmin; /*I just want to push the whole thing down without giving everything top padding*/
+  display: flex;  /*setting up display to flex */
+  justify-content: center; /*Start from the middle to make life a bit easier*/
+  padding-right: 48vmin; /*The first line is a little closer to the center*/
+}
+
+h2:first-child + h2{ /*I know that this seems a little irrelevant given that I separated the other half into h3 tags, but this is just css selector practice*/
+  display: flex;  /*setting up display to flex */
+  justify-content: center; /*Start from the middle to make life a bit easier*/
+  padding-right: 53vmin; /*The first line is a little closer to the edge of poster*/
+}
+
+/*Yeah I made bottom and top parts of the text h2 and h3 to better manage their placing*/
+.bigText > h2,h3 {
+  font-size: 5vmin; /*Classic font resizing*/
+  letter-spacing: 0.06em; /*Also classic letter spacing to allow them to breath a bit, they were on the verge of hyperventilating*/
+  font-family: 'Teko'; /*This font looked better than the font I used for h1*/
+  line-height: 1em; /*I use the same line-height value, but h2 and h3 are smaller, so this actually spaces them out a bit more*/
+}
+
+
+.bigText > h3 {
+  display: flex;  /*setting up display to flex */
+  justify-content: center; /*Start from the middle to make life a bit easier*/
+  padding-left: 42vmin; /*Moving them to their right spot*/
+}
