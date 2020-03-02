@@ -6,6 +6,11 @@
 
 body {
   background-color: RebeccaPurple; /*Feeling purple today*/
+
+  background-image:url('data/khazix.jpg'); /*Image*/
+  background-position:center center; /*Repositioning of bg images*/
+  background-size:100vmax; /*Big background size*/
+  background-repeat:repeat; /*turning on repetition of background image so it doesn't get too gnarly with the bg color when we resize the screen*/
 }
 
 /*One container to rule them all*/
@@ -34,7 +39,7 @@ body {
   background-color: RebeccaPurple; /*BG color to see if anything is wrong*/
   background-image:url('data/khazix.jpg'); /*Image*/
   background-position:center center; /*Repositioning of bg images*/
-  background-size:100vmax; /*Big background size*/
+  background-size:100vw; /*Big background size*/
   background-repeat:repeat; /*turning on repetition of background image so it doesn't get too gnarly with the bg color when we resize the screen*/
   width: 50%; /*Formatting to make main content be in a more square area */
   font-family: 'Anton'; /* adding in font */
@@ -119,5 +124,5 @@ h2:first-child + h2{ /*I know that this seems a little irrelevant given that I s
 .bigText > h3 {
   display: flex;  /*setting up display to flex */
   justify-content: center; /*Start from the middle to make life a bit easier*/
-  padding-left: 42vmin; /*Moving them to their right spot*/
+  padding-left: 40vmin; /*Moving them to their right spot*/
 }
